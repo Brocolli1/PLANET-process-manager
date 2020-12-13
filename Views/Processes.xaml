@@ -13,17 +13,29 @@
         <ListBox Grid.Column ="0" Name="ProcessListBox" HorizontalContentAlignment="Stretch" ItemsSource="{Binding ListedProcesses}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid Margin="0,3">
+                    <Grid Margin="0,4">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="200" />
                             <ColumnDefinition Width="100" />
                             <ColumnDefinition Width="100"/>
                             <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="400"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Text="{Binding Name}" />
                         <TextBlock Grid.Column="1" Text="{Binding Id}" />
                         <TextBlock Grid.Column="2" Text="{Binding Priority}" />
                         <TextBlock Grid.Column="3" Text="{Binding FileName}" />
+                        <ComboBox Name="cmbColors" ItemsSource="{Binding Modules}">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Grid.Column="0" Text="{Binding ModuleName}" />
+                                        <TextBlock Grid.Column="2" Text="{Binding EntryPointAddress}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                       
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>

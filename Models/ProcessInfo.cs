@@ -9,6 +9,8 @@ namespace PrismApp.Models
         public string Info { get; set; }
         public string Priority { get; set; }
 
+        public ProcessModuleCollection Modules { get; set; }
+
         public Process ThisProcess { get; set; }
         public int Id { get; set; }
         public ProcessStartInfo StartInfo { get; set; }
@@ -26,6 +28,15 @@ namespace PrismApp.Models
             
             
             StartInfo = ThisProcess.StartInfo;
+            try
+            {
+                Modules = ThisProcess.Modules;
+            }
+            catch
+            {
+                Modules = null;
+            }
+
             try
             {
                 if (ThisProcess.MainModule != null) FileName = ThisProcess.MainModule.FileName;
