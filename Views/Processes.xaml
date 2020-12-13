@@ -25,7 +25,7 @@
                         <TextBlock Grid.Column="1" Text="{Binding Id}" />
                         <TextBlock Grid.Column="2" Text="{Binding Priority}" />
                         <TextBlock Grid.Column="3" Text="{Binding FileName}" />
-                        <ComboBox Name="cmbColors" ItemsSource="{Binding Modules}">
+                        <ComboBox Grid.Column="4" Name="cmbColors" ItemsSource="{Binding Modules}">
                             <ComboBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
