@@ -1,0 +1,750 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.2.0.1422",
+          "Unity.Container": "5.11.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "Unity.Abstractions/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.2.0.1422",
+          "Unity.Container": "5.11.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "Unity.Abstractions/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.2.0.1422",
+          "Unity.Container": "5.11.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "Unity.Abstractions/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.2.0.1422",
+          "Unity.Container": "5.11.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.2.0.1422": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "Unity.Abstractions/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommonServiceLocator/2.0.4": {
+      "sha512": "PUYeC0w+gGG9+T1/sREZaKQAXErlakvhHwEmxMmtIVJeULBB7QdF80IXkVFeu8pz4Nzx81N2zfwk4WaVn3PeXg==",
+      "type": "package",
+      "path": "commonservicelocator/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.2.0.4.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/net40/CommonServiceLocator.dll",
+        "lib/net45/CommonServiceLocator.dll",
+        "lib/net46/CommonServiceLocator.dll",
+        "lib/net47/CommonServiceLocator.dll",
+        "lib/netcoreapp1.0/CommonServiceLocator.dll",
+        "lib/netcoreapp2.0/CommonServiceLocator.dll",
+        "lib/netstandard1.0/CommonServiceLocator.dll",
+        "lib/netstandard2.0/CommonServiceLocator.dll"
+      ]
+    },
+    "Prism.Core/7.2.0.1422": {
+      "sha512": "46ypwrlGhnv3vx2LUHgV/jCHjf5ptr5AzMTnF19VXdV5itmCSwncbS3mzQx0TJIklYkkZkxBGgOJTbD2IDS7HQ==",
+      "type": "package",
+      "path": "prism.core/7.2.0.1422",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.dll",
+        "lib/net45/Prism.pdb",
+        "lib/net45/Prism.xml",
+        "lib/netcoreapp3.0/Prism.dll",
+        "lib/netcoreapp3.0/Prism.pdb",
+        "lib/netcoreapp3.0/Prism.xml",
+        "lib/netstandard2.0/Prism.dll",
+        "lib/netstandard2.0/Prism.pdb",
+        "lib/netstandard2.0/Prism.xml",
+        "prism.core.7.2.0.1422.nupkg.sha512",
+        "prism.core.nuspec"
+      ]
+    },
+    "Prism.Unity/7.2.0.1422": {
+      "sha512": "E28ynI8vxb0Q5UKX0uEQwz2NjivE4+ssreJpvyHrOvTsOeFMlJp1+2NV9U+9NaHYat7LufHCe4XF7ZlfSvFRkw==",
+      "type": "package",
+      "path": "prism.unity/7.2.0.1422",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.Unity.Wpf.dll",
+        "lib/net45/Prism.Unity.Wpf.pdb",
+        "lib/net45/Prism.Unity.Wpf.xml",
+        "lib/netcoreapp3.0/Prism.Unity.Wpf.dll",
+        "lib/netcoreapp3.0/Prism.Unity.Wpf.pdb",
+        "lib/netcoreapp3.0/Prism.Unity.Wpf.xml",
+        "prism.unity.7.2.0.1422.nupkg.sha512",
+        "prism.unity.nuspec"
+      ]
+    },
+    "Prism.Wpf/7.2.0.1422": {
+      "sha512": "28Rh+TzGWUCtWOLvWEZWdYcohrxgZE0uFUchvlx5wy2KDgqQl0R2S/0SIo+cFk2S62f5c+yrvBZ0UePXOaOhXw==",
+      "type": "package",
+      "path": "prism.wpf/7.2.0.1422",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.Wpf.dll",
+        "lib/net45/Prism.Wpf.pdb",
+        "lib/net45/Prism.Wpf.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/netcoreapp3.0/Prism.Wpf.dll",
+        "lib/netcoreapp3.0/Prism.Wpf.pdb",
+        "lib/netcoreapp3.0/Prism.Wpf.xml",
+        "lib/netcoreapp3.0/System.Windows.Interactivity.dll",
+        "prism.wpf.7.2.0.1422.nupkg.sha512",
+        "prism.wpf.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "hMkdWxksypQlFXB7JamQegDscxEAQO4FHd/lw/zlSZU9dZgAij65xjCrXer183wvoNAzJic5zzjj2oc9/dloWg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.2": {
+      "sha512": "5HCu8V3QB+gouMZmGrA666weZ0UQRt+OTD16rSE3Hyhu4Qhlvxkf4nTPI0GLy52s0rxgi7C8t2ayFAzw7UK1og==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "+gDrtQRdEsUSdPZEEcVRmBvs6xJmqGBqRzEGMQm5XqHxWTkZe/PSuomdth5ZPcOb/Oh2kIu6NChoI1JQk649jg==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Unity.Abstractions/5.11.1": {
+      "sha512": "ulq0Li5htEIg0oCT7LXk1Qgp7G38Kh/ssrbroEGL5aB4weZLpwZy0WY03gzQ8lT50oWowqbbSLUcSVrkVgDfQQ==",
+      "type": "package",
+      "path": "unity.abstractions/5.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Abstractions.dll",
+        "lib/net40/Unity.Abstractions.pdb",
+        "lib/net45/Unity.Abstractions.dll",
+        "lib/net45/Unity.Abstractions.pdb",
+        "lib/net46/Unity.Abstractions.dll",
+        "lib/net46/Unity.Abstractions.pdb",
+        "lib/net47/Unity.Abstractions.dll",
+        "lib/net47/Unity.Abstractions.pdb",
+        "lib/netcoreapp1.0/Unity.Abstractions.dll",
+        "lib/netcoreapp1.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Unity.Abstractions.dll",
+        "lib/netcoreapp2.0/Unity.Abstractions.pdb",
+        "lib/netstandard1.0/Unity.Abstractions.dll",
+        "lib/netstandard1.0/Unity.Abstractions.pdb",
+        "lib/netstandard2.0/Unity.Abstractions.dll",
+        "lib/netstandard2.0/Unity.Abstractions.pdb",
+        "unity.abstractions.5.11.1.nupkg.sha512",
+        "unity.abstractions.nuspec"
+      ]
+    },
+    "Unity.Container/5.11.1": {
+      "sha512": "vJEhBuK9ceHO9EoZs9FNhL7ylFs661vGqGx4Qdhd808b/zhOEpzalGAWxTBPbcvTvUkaHRcHUa3OEPx0rZmQpQ==",
+      "type": "package",
+      "path": "unity.container/5.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Container.dll",
+        "lib/net40/Unity.Container.pdb",
+        "lib/net45/Unity.Container.dll",
+        "lib/net45/Unity.Container.pdb",
+        "lib/net46/Unity.Container.dll",
+        "lib/net46/Unity.Container.pdb",
+        "lib/net47/Unity.Container.dll",
+        "lib/net47/Unity.Container.pdb",
+        "lib/netcoreapp1.0/Unity.Container.dll",
+        "lib/netcoreapp1.0/Unity.Container.pdb",
+        "lib/netcoreapp2.0/Unity.Container.dll",
+        "lib/netcoreapp2.0/Unity.Container.pdb",
+        "lib/netstandard1.0/Unity.Container.dll",
+        "lib/netstandard1.0/Unity.Container.pdb",
+        "lib/netstandard2.0/Unity.Container.dll",
+        "lib/netstandard2.0/Unity.Container.pdb",
+        "unity.container.5.11.1.nupkg.sha512",
+        "unity.container.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Prism.Unity >= 7.2.0.1422"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\matik\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\matik\\source\\repos\\PrismApp\\PrismApp\\PrismApp.csproj",
+      "projectName": "PrismApp",
+      "projectPath": "C:\\Users\\matik\\source\\repos\\PrismApp\\PrismApp\\PrismApp.csproj",
+      "packagesPath": "C:\\Users\\matik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matik\\source\\repos\\PrismApp\\PrismApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\matik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "Prism.Unity": {
+            "target": "Package",
+            "version": "[7.2.0.1422, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

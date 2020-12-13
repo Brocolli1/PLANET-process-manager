@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "ITyVo+I5+lzBjC+UeYBMi55RF4JS0bP5nDmhQ/Yl36f8rxKQpj0YnkiQx6b+4eRV0iYb1sZFalkT3gx22xf3zw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\matik\\source\\repos\\PrismApp\\PrismApp\\PrismApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\matik\\.nuget\\packages\\commonservicelocator\\2.0.4\\commonservicelocator.2.0.4.nupkg.sha512",
+    "C:\\Users\\matik\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\matik\\.nuget\\packages\\prism.unity\\7.2.0.1422\\prism.unity.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\matik\\.nuget\\packages\\prism.wpf\\7.2.0.1422\\prism.wpf.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\matik\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\matik\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\matik\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\matik\\.nuget\\packages\\unity.abstractions\\5.11.1\\unity.abstractions.5.11.1.nupkg.sha512",
+    "C:\\Users\\matik\\.nuget\\packages\\unity.container\\5.11.1\\unity.container.5.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
