@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using PrismApp.Models;
@@ -14,6 +15,12 @@ namespace PrismApp.Views
         public Processes()
         {
             InitializeComponent();
+        }
+
+
+        public void Filter(object sender, TextChangedEventArgs textChangedEventArgs)
+        {
+            ProcessListBox.Items.Filter = (o) => ((ProcessInfo)o).Name.ToLower().Contains(FilterText.Text.ToLower()); 
         }
 
         public void OnClickStart(object sender, RoutedEventArgs e)
@@ -50,6 +57,6 @@ namespace PrismApp.Views
             ProcessesViewModel.SetProcessPriorityToLow(((ProcessInfo)ProcessListBox.SelectedItem).Id);
             ProcessListBox.Items.Refresh();
         }
-
+        
     }
 }

@@ -13,13 +13,14 @@
         <ListBox Grid.Column ="0" Name="ProcessListBox" HorizontalContentAlignment="Stretch" ItemsSource="{Binding ListedProcesses}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid Margin="0,4">
+                    <Grid Margin="0,5">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="200" />
                             <ColumnDefinition Width="100" />
                             <ColumnDefinition Width="100"/>
-                            <ColumnDefinition Width="300"/>
                             <ColumnDefinition Width="400"/>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="20"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Text="{Binding Name}" />
                         <TextBlock Grid.Column="1" Text="{Binding Id}" />
@@ -35,7 +36,9 @@
                                 </DataTemplate>
                             </ComboBox.ItemTemplate>
                         </ComboBox>
-                       
+                        <CheckBox Command="{Binding MonitorProcess}" CommandParameter="{Binding ElementName=ProcessListBox,Path=SelectedItem}">
+
+                        </CheckBox>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -70,6 +73,10 @@
                 <Button Name="DownPriority" Width="50" Height="20" Click="OnLowerPriorityClick">
                     Lower Priority 
                 </Button>
+
+                <TextBox Name="FilterText" Width="50" Height="20" TextChanged="Filter">
+                    
+                </TextBox>
             </StackPanel>
         </Grid>
     </Grid>

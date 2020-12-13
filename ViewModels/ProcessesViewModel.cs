@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using PrismApp.Models;
 
@@ -15,15 +16,18 @@ namespace PrismApp.ViewModels
     public class ProcessesViewModel : BindableBase
     {
         public DelegateCommand RefreshCommand { get; private set; }
-        public List<ProcessInfo> ListedProcesses { get; set; }
 
+        public List<ProcessInfo> ListedProcesses { get; set; }
+        public List<(int,Task)> Monitored { get; set; }
         private Thread refresher;
         public ProcessesViewModel()
         {
             /*refresher = new Thread(RefreshCycle);
             refresher.Start();*/
+            Monitored = new List<(int,Task)>();
 
             RefreshCommand = new DelegateCommand(RefreshProcesses);
+            
             ListedProcesses = new List<ProcessInfo>();
             RefreshProcesses();
             var startTimeSpan = TimeSpan.Zero;
@@ -93,6 +97,21 @@ namespace PrismApp.ViewModels
         {
             if (StartInfo.FileName != "")
                 Process.Start(StartInfo);
+        }
+
+        public void MonitorProcess(ProcessInfo selectedItem)
+        {
+            Monitored.Add((selectedItem.Id, Task.Run(() =>
+                {
+                    selectedItem.ThisProcess.WaitForExit();
+                    selectedItem.ThisProcess.Start();
+                }
+                )));
+        }
+
+        public static void StopMonitoring(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
